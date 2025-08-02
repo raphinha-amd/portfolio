@@ -1,0 +1,44 @@
+[class^="montserrat-"] {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+.montserrat-thin {
+  font-weight: 100;
+}
+.montserrat-light {
+  font-weight: 300;
+}
+.montserrat-regular {
+  font-weight: 400;
+}
+.montserrat-medium {
+  font-weight: 500;
+}
+.montserrat-semibold {
+  font-weight: 600;
+}
+.montserrat-bold {
+  font-weight: 700;
+}
+.montserrat-black {
+  font-weight: 900;
+}
+
+.btn-custom {
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-custom:hover {
+  background-color: rgb(0, 112, 112);
+  color: white;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
