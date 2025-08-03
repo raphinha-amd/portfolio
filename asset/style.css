@@ -42,3 +42,72 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
+
+.switch-large {
+  transform: scale(1.5);
+  transform-origin: right center;
+  cursor: pointer;
+}
+
+.d-flex::-webkit-scrollbar {
+  height: 6px;
+}
+.d-flex::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.link-hover {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.link-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.link-hover:hover::after {
+  width: 100%;
+}
+
+[data-bs-theme="dark"] .link-hover::after {
+  background-color: white;
+}
+[data-bs-theme="light"] .link-hover::after {
+  background-color: black;
+}
+.link-hover-b {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.link-hover-b::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.link-hover-b:hover::after {
+  width: 60%;
+}
+
+[data-bs-theme="dark"] .link-hover::after {
+  background-color: white;
+}
+[data-bs-theme="light"] .link-hover::after {
+  background-color: black;
+}

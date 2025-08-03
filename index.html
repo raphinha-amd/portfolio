@@ -25,14 +25,14 @@
     <link rel="icon" href="asset/icon.ico" type="image/x-icon" />
   </head>
   <body>
-    <!-- navbar -->
+    <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-light bg-body-tertiary shadow-sm"
       id="mainNavbar"
     >
       <div class="container">
         <a
-          class="navbar-brand d-flex align-items-center montserrat-semibold"
+          class="navbar-brand d-flex align-items-center montserrat-bold"
           href="#"
         >
           <img
@@ -55,116 +55,260 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
-          class="collapse navbar-collapse justify-content-end montserrat-medium"
+          class="collapse navbar-collapse justify-content-end montserrat-semibold"
           id="navbarNav"
         >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav gap-2">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >About Me</a
-              >
+              <a class="nav-link link-hover" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Project</a
-              >
+              <a class="nav-link link-hover" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Skills</a>
+              <a class="nav-link link-hover" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Contact</a
-              >
+              <a class="nav-link link-hover" href="#contact">Contact</a>
             </li>
-            <li class="nav-item d-flex align-items-center"></li>
+
+            <li class="nav-item d-flex align-items-center ms-3">
+              <div class="d-flex align-items-center">
+                <!-- Switch besar -->
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input switch-large"
+                    type="checkbox"
+                    role="switch"
+                    id="themeSwitch"
+                  />
+                </div>
+
+                <!-- Ikon tema di kanan -->
+                <i
+                  id="themeIcon"
+                  class="bi bi-brightness-high-fill fs-5"
+                  style="margin-top: 1px"
+                ></i>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Hero Section - Visible on md and up -->
-    <div class="container d-none d-md-block">
-      <div class="row my-3">
-        <div class="col-12">
-          <section
-            class="position-relative overflow-hidden rounded-4"
-            style="height: 400px"
-          >
-            <!-- Background Image -->
-            <img
-              src="asset/blabla.jpeg"
-              alt="Hero Background"
-              class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-            />
-
-            <!-- Dark Overlay -->
-            <div
-              class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"
-            ></div>
-
-            <!-- Hero Content -->
-            <div
-              class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end p-5 text-white"
-              style="z-index: 1"
-            >
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h1 class="fw-bold">Rapinha</h1>
-                    <p class="mb-4">BSI University student</p>
-                    <a href="#projects" class="btn btn-custom fw-semibold"
-                      >View Projects</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <!-- Hero section on md and down -->
-
+    <!-- Hero Section -->
     <div class="container my-5">
-      <h3 class="mb-3">Project List</h3>
+      <div
+        class="rounded overflow-hidden position-relative mb-3"
+        style="height: 350px"
+      >
+        <img
+          src="asset/hero.jpg"
+          class="w-100 h-100 object-fit-cover"
+          alt="Hero Image"
+        />
+        <div
+          class="position-absolute top-0 start-0 w-100 h-100"
+          style="background-color: rgba(0, 0, 0, 0.5)"
+        ></div>
+        <div
+          class="position-absolute text-light p-4"
+          style="bottom: 20px; left: 20px"
+        >
+          <h1 class="montserrat-bold mb-2">Raffi Ahmad</h1>
+          <p class="mb-3 fs-6 montserrat-medium">
+            Mahasiswa UBSI | Sistem Informasi
+          </p>
+          <a href="#projects" class="btn btn-custom fw-semibold px-4 py-2">
+            View Projects
+          </a>
+        </div>
+      </div>
 
-      <div class="d-flex overflow-auto flex-nowrap gap-3 pb-3">
-        <div class="card" style="min-width: 250px">
-          <img src="asset/img1.jpg" class="card-img-top" alt="..." />
+      <!-- about me section -->
+      <h4 class="montserrat-bold my-4" id="about">About Me</h4>
+      <p class="montserrat-regular">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ullam
+        dolorum iure, non est nostrum nam dolor, impedit quod maiores ratione
+        ipsam maxime similique fugiat perferendis ducimus veritatis, animi nemo
+        rerum culpa officia? Blanditiis officiis optio, odio exercitationem
+        inventore reiciendis at deleniti molestiae facilis necessitatibus autem
+        eius voluptate id saepe, eveniet ratione ut sequi magnam tempora.
+      </p>
+
+      <!-- projects section -->
+      <h4 class="montserrat-bold my-4" id="projects">Projects</h4>
+      <div class="d-flex overflow-auto gap-4 pb-2">
+        <div class="card" style="min-width: 300px">
           <div class="card-body">
-            <h5 class="card-title">Project 1</h5>
-            <p class="card-text">Deskripsi singkat.</p>
+            <img src="asset/hero.jpg" alt="" class="card-img" />
+            <h5 class="card-title mt-2">Lorem, ipsum.</h5>
           </div>
         </div>
-        <div class="card" style="min-width: 250px">
-          <img src="asset/img2.jpg" class="card-img-top" alt="..." />
+        <div class="card" style="min-width: 300px">
           <div class="card-body">
-            <h5 class="card-title">Project 2</h5>
-            <p class="card-text">Deskripsi singkat.</p>
+            <img src="asset/hero.jpg" alt="" class="card-img" />
+            <h5 class="card-title mt-2">Lorem, ipsum.</h5>
           </div>
         </div>
-        <div class="card" style="min-width: 250px">
-          <img src="asset/img3.jpg" class="card-img-top" alt="..." />
+        <div class="card" style="min-width: 300px">
           <div class="card-body">
-            <h5 class="card-title">Project 3</h5>
-            <p class="card-text">Deskripsi singkat.</p>
+            <img src="asset/hero.jpg" alt="" class="card-img" />
+            <h5 class="card-title mt-2">Lorem, ipsum.</h5>
           </div>
         </div>
-        <!-- Tambah card sebanyak yang kamu mau -->
+        <div class="card" style="min-width: 300px">
+          <div class="card-body">
+            <img src="asset/hero.jpg" alt="" class="card-img" />
+            <h5 class="card-title mt-2">Lorem, ipsum.</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- skills section -->
+      <h4 class="montserrat-bold my-4" id="skills">Skills</h4>
+      <div class="d-flex flex-wrap gap-2 fs-5">
+        <span class="badge rounded-pill bg-secondary text-light">HTML</span>
+        <span class="badge rounded-pill bg-secondary text-light"
+          >Bootstrap</span
+        >
+        <span class="badge rounded-pill bg-secondary text-light"
+          >Tailwindcss</span
+        >
+        <span class="badge rounded-pill bg-secondary text-light"
+          >JavaScript</span
+        >
+        <span class="badge rounded-pill bg-secondary text-light">PHP</span>
+        <span class="badge rounded-pill bg-secondary text-light">Git</span>
+        <span class="badge rounded-pill bg-secondary text-light">SQL</span>
+        <span class="badge rounded-pill bg-secondary text-light">Laravel</span>
+        <span class="badge rounded-pill bg-secondary text-light">Python</span>
+      </div>
+
+      <!-- contact section -->
+      <h4 class="montserrat-bold my-4" id="contact">Contact</h4>
+      <div class="row">
+        <div class="col-md-8 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <form
+                action="https://formsubmit.co/rafinha.amd1877@gmail.com"
+                method="POST"
+              >
+                <!-- anti spam -->
+                <input type="text" name="_honey" style="display: none" />
+
+                <!-- nonaktif captcha -->
+                <input type="hidden" name="_captcha" value="false" />
+
+                <!-- redirect after submit -->
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://127.0.0.1:5500/thanks.html"
+                />
+
+                <!-- subjek email -->
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Pesan dari Portfolio!"
+                />
+
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-custom montserrat-medium">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex flex-column gap-2">
+            <a
+              href="https://www.instagram.com/_rapinha/"
+              class="d-flex align-items-center gap-2 text-decoration-none text-body link-hover-b"
+              target="_blank"
+            >
+              <i class="bi bi-instagram"></i>
+              instagram.com/_rapinha
+            </a>
+
+            <a
+              href="https://linkedin.com/in/raffi-aahmad"
+              class="d-flex align-items-center gap-2 text-decoration-none text-body link-hover-b"
+              target="_blank"
+            >
+              <i class="bi bi-linkedin"></i>
+              linkedin.com/in/raffi-ahmad
+            </a>
+
+            <a
+              href="https://github.com/raphinha-amd"
+              class="d-flex align-items-center gap-2 text-decoration-none text-body link-hover-b"
+              target="_blank"
+            >
+              <i class="bi bi-github"></i>
+              github.com/raphinha-amd
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Floating Dark/Light Mode Toggle Button -->
-    <button
-      id="themeToggle"
-      class="btn btn-outline-secondary position-fixed"
-      style="bottom: 24px; right: 24px; z-index: 1050"
-    >
-      <span id="themeIcon" class="bi bi-moon"></span>
-    </button>
+    <!-- footer -->
+    <footer class="text-center text-lg-start mt-5 py-4 border-top">
+      <div class="container">
+        <!-- Copyright & Source Code -->
+        <div class="text-center text-muted small">
+          &copy; 2025 Raffi. All rights reserved.
+          <br />
+          <a
+            href="https://github.com/username/portfolio"
+            class="text-decoration-none text-body link-hover"
+            target="_blank"
+          >
+            <i class="bi bi-code-slash me-1"></i> Source Code
+          </a>
+        </div>
+      </div>
+    </footer>
+
     <script src="asset/script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
